@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", sans-serif;
+  --font-display: "Playfair Display", serif;
+  --font-mono: "DM Mono", monospace;
+  --color-ink: #17201b;
+  --color-muted: #6b7069;
+  --color-paper: #f1ede5;
+  --color-paper-deep: #e7e1d6;
+  --color-orange: #e65c2f;
+  --color-green: #25473b;
+  --color-line: rgba(23, 32, 27, 0.16);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    background: #f1ede5;
+    color: #17201b;
+    font-family: "DM Sans", sans-serif;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
