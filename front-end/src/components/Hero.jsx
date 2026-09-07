@@ -27,7 +27,7 @@ const Hero = () => {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-paper bg-[linear-gradient(rgba(23,32,27,.16)_1px,transparent_1px),linear-gradient(90deg,rgba(23,32,27,.16)_1px,transparent_1px)] bg-[size:100%_4rem,4rem_100%] px-5 py-28 text-center text-ink sm:px-8 lg:px-8"
+      className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-paper bg-[linear-gradient(rgba(23,32,27,.16)_1px,transparent_1px),linear-gradient(90deg,rgba(23,32,27,.16)_1px,transparent_1px)] bg-size-[100%_4rem,4rem_100%] px-5 py-28 text-center text-ink sm:px-8 lg:px-8"
     >
       {/* mirrored plus marks frame the section on both breakpoints */}
       <div
@@ -89,12 +89,12 @@ const Hero = () => {
             <div className="absolute inset-[-4px_8px] rounded-full border border-green" />
           </div>
 
-          <div className="relative grid aspect-[4/5] place-items-center border border-ink outline-[10px] outline-paper/75 [background:linear-gradient(145deg,#25473b,#467060_48%,#e65c2f_49%,#ed8c69)] shadow-[12px_12px_0_#e65c2f] max-md:shadow-[8px_8px_0_#e65c2f]">
+          <div className="relative grid aspect-4/5 place-items-center border border-ink outline-10 outline-paper/75 [background:linear-gradient(145deg,#25473b,#467060_48%,#e65c2f_49%,#ed8c69)] shadow-[12px_12px_0_#e65c2f] max-md:shadow-[8px_8px_0_#e65c2f]">
             <span className="font-display text-[3.4rem] font-bold tracking-[-.08em] text-paper md:text-[4rem]">
               GP
             </span>
           </div>
-          <p className="relative mt-5 text-center font-mono text-[.76rem] uppercase leading-[1.5] tracking-[.08em] text-muted max-md:text-[.65rem]">
+          <p className="relative mt-5 text-center font-mono text-[.76rem] uppercase leading-normal tracking-[.08em] text-muted max-md:text-[.65rem]">
             Profile photo
           </p>
         </motion.div>
@@ -103,12 +103,12 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.35 }}
-          className="mx-auto max-w-[620px] md:mx-0 md:max-w-none md:flex-1"
+          className="mx-auto max-w-155 md:mx-0 md:max-w-none md:flex-1"
         >
           <p className="font-mono text-[.8rem] font-medium uppercase tracking-[.12em] text-orange">
             Retail operations · people · growth
           </p>
-          <p className="mx-auto mt-4 max-w-[540px] text-[1.05rem] font-medium leading-[1.65] text-ink md:mx-0 md:max-w-[560px] md:text-[clamp(1.2rem,1.8vw,1.4rem)]">
+          <p className="mx-auto mt-4 max-w-135 text-[1.05rem] font-medium leading-[1.65] text-ink md:mx-0 md:max-w-140 md:text-[clamp(1.2rem,1.8vw,1.4rem)]">
             I’m Gouranga Paul, a retail operations leader turning customer
             insight, commercial focus, and human potential into high-performing
             stores.
@@ -124,7 +124,7 @@ const Hero = () => {
         </motion.div>
       </div>
 
-      <div className="relative z-10 mx-auto mt-14 flex w-full max-w-5xl flex-wrap items-center justify-center gap-x-8 gap-y-2 border-t border-ink/15 pt-4 font-mono text-[.65rem] uppercase leading-[1.5] tracking-[.08em] text-muted md:mt-16 md:justify-between md:text-[.76rem]">
+      <div className="relative z-10 mx-auto mt-14 flex w-full max-w-5xl flex-wrap items-center justify-center gap-x-8 gap-y-2 border-t border-ink/15 pt-4 font-mono text-[.65rem] uppercase leading-normal tracking-[.08em] text-muted md:mt-16 md:justify-between md:text-[.76rem]">
         <span>Based in India</span>
         <span>Decathlon · 2018—Now</span>
         <span>Scroll to explore ↓</span>
